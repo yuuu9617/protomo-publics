@@ -1,0 +1,314 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+:root {
+  font-family: Roboto, YakuHanJPs_Narrow, -apple-system, BlinkMacSystemFont,
+    Segoe UI, sans-serif !important;
+  color: #222;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("./imgs/protomo_logo.png");
+  background-color: rgba(255, 255, 255, 0.8);
+  background-blend-mode: lighten;
+}
+.wrapper {
+  margin: 0 auto;
+  min-width: 375px;
+  max-width: 375px;
+  background-color: white;
+}
+header {
+  height: 54px;
+}
+
+header h1 {
+  height: 100%;
+}
+header h1 img {
+  height: 80%;
+}
+.catch {
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 600;
+  padding-bottom: 16px;
+}
+
+.catch-img {
+  height: 133px;
+  opacity: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+.catch-img img {
+  position: absolute;
+  top: -24px;
+}
+
+.registration {
+  height: 195px;
+}
+
+.registration .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 0;
+  gap: 16px;
+}
+
+.registration .container .captions {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.1;
+}
+.registration .container .captions small {
+  font-size: 12px;
+}
+.registration .container .captions .point {
+  font-size: 22px;
+}
+.registration .container .registration-button {
+  width: 242px;
+  height: 42px;
+  background-color: #d40000;
+  border-radius: 25px;
+  box-shadow: 0px 4px 1px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.registration .container .registration-button:hover {
+  scale: 1.05;
+  box-shadow: 0px 6px 2px rgba(0, 0, 0, 0.1);
+  background-color: #e60000;
+}
+.registration .container .registration-button:active {
+  scale: 0.95;
+  background-color: #b30000;
+}
+hr {
+  border: none;
+  border-top: 4px #d9d9d9 solid;
+}
+
+.appeal {
+  height: 232px;
+  padding: 24px 18px;
+}
+.appeal .wants {
+  color: #d40000;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.appeal .wants li {
+  display: inline-block;
+  margin-bottom: 8px;
+  background: linear-gradient(transparent 60%, rgba(232, 193, 193, 0.5) 0%);
+  padding: 0 1px 0;
+}
+.appeal .wants li:last-child {
+  display: inline;
+}
+
+.appeal .solution {
+  font-size: 15px;
+}
+
+.intro .caption {
+  height: 112px;
+  background-color: #d40000;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.intro .answer-container {
+  height: 272px;
+  display: flex;
+}
+.intro .answer-container div {
+  width: 50%;
+}
+
+.intro .answer-container .answer {
+  padding: 24px 8px;
+  font-size: 15px;
+}
+
+.intro .answer-container .answer-img img {
+  opacity: 60%;
+}
+
+.caution-to-register {
+  height: 296px;
+  background-color: #f4ebeb;
+  padding: 24px;
+}
+
+.caution-to-register .captions {
+  margin-bottom: 16px;
+}
+.caution-to-register .captions h2,
+.caution-to-register .captions h3 {
+  font-size: 16px;
+  text-align: center;
+}
+.caution-to-register .contents h4,
+.caution-to-register .contents p {
+  font-size: 12px;
+}
+.caution-to-register .contents small {
+  font-size: 11px;
+}
+
+.flow {
+  padding: 24px 12px;
+}
+.flow h2 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.flow .steps {
+  border: 4px solid #e3c9bf;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.flow .steps .step {
+  color: #575752;
+  font-size: 15px;
+  padding: 1em;
+  position: relative;
+  border-bottom: 3px solid #e3c9bf;
+}
+
+.flow .steps .step::after,
+.flow .steps .step::before {
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.flow .steps .step::after {
+  border-color: rgba(255, 255, 255, 0);
+  border-top-color: #ffffff;
+  border-width: 10px;
+  margin-left: -10px;
+  z-index: 501;
+}
+
+.flow .steps .step::before {
+  border-color: rgba(227, 201, 191, 0);
+  border-top-color: #e3c9bf;
+  border-width: 14px;
+  margin-left: -14px;
+  z-index: 500;
+}
+.flow .steps .step p {
+  display: flex;
+  align-items: center;
+}
+.flow .steps .step p::before {
+  content: "1";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 2em;
+  height: 2em;
+  border-radius: 1em;
+  background: #e2a291;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 1;
+  margin-right: 0.5em;
+}
+
+.flow .steps .step:nth-of-type(2) p::before {
+  content: "2";
+}
+.flow .steps .step:nth-of-type(3) p::before {
+  content: "3";
+}
+.flow .steps .step:nth-of-type(4) p::before {
+  content: "4";
+}
+.flow .steps .step:nth-of-type(5) p::before {
+  content: "5";
+}
+.flow .steps .step:nth-of-type(6) p::before {
+  content: "6";
+}
+.flow .steps .step:nth-of-type(7) p::before {
+  content: "7";
+}
+.flow .steps .step:nth-of-type(8) p::before {
+  content: "8";
+}
+.flow .steps .step:nth-of-type(9) p::before {
+  content: "9";
+}
+
+.flow .steps .step:last-child {
+  border-bottom: none;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 0 0 7px 7px;
+  font-size: 1.2em;
+  background: #fae9e3 url("./imgs/step-bg_sp.png") no-repeat center bottom;
+  background-size: 278px 70px;
+  padding-bottom: 2em;
+}
+.flow .steps .step:last-child::after,
+.flow .steps .step:last-child::before {
+  display: none;
+}
+
+footer {
+  background-color: #f4ebeb;
+}
+
+footer .container {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+footer .catch-text {
+  font-weight: 600;
+}
+footer .copyright {
+  text-align: center;
+}
+
+.fixed-area {
+  display: block;
+  position: sticky;
+  top: 0;
+}
+
+.point {
+  color: #d40000;
+}

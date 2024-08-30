@@ -1,33 +1,204 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
-    <meta charset="utf-8" />
-    <title>特定商取引法に基づく表記 - プロトモゴルフ</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-      html,
-      body {
-        height: 100%;
-        margin: 0;
-      }
-      iframe {
-        border: none;
-      }
-      /* スマートフォン対応のために、iframeの高さを画面いっぱいにする */
-      @media (max-width: 768px) {
-        iframe {
-          height: calc(
-            100vh - 20px
-          ); /* ビューポートの高さから余白を引いた高さ */
-        }
-      }
-    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=375" />
+    <title>プロトモゴルフ</title>
+    <link rel="icon" href="/favicon.ico" id="favicon" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/apple-touch-icon-180x180.png"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <iframe
-      src="specified-commercial-transaction-act.pdf"
-      width="100%"
-      height="100%"
-    ></iframe>
+    <div class="wrapper">
+      <header>
+        <h1>
+          <a href=".">
+            <img src="./imgs/logo_white_bg.png" alt="logo" />
+          </a>
+        </h1>
+      </header>
+      <section class="catch">
+        <div>
+          <p>
+            <span class="point">プロアマ</span>をもっと<span class="point"
+              >身近</span
+            >に。
+          </p>
+        </div>
+      </section>
+      <section class="catch-img">
+        <img
+          src="./imgs/front-view-young-golfers-high-fiving.jpg"
+          alt="catch-image"
+        />
+      </section>
+      <section class="registration">
+        <div class="container">
+          <div class="captions">
+            <p>💰報酬： <span class="point"> 26,400 </span>円／ラウンド💰</p>
+            <p>
+              登録料<span class="point">無料</span>+月額料金6ヶ月<span
+                class="point"
+                >無料</span
+              >キャンペーン中
+            </p>
+            <p><small>＼いつでも解約可能／</small></p>
+          </div>
+          <a href="https://forms.gle/8WWWHekzL7E93mmx8" target="_blank">
+            <button class="registration-button">いますぐ新規登録</button>
+          </a>
+        </div>
+      </section>
+      <hr />
+      <section class="appeal">
+        <ul class="wants">
+          <li>もっとプロアマの機会を増やしたい！</li>
+          <br />
+          <li>もっと多くの人に応援してもらいたい！</li>
+          <br />
+          <li>多額の遠征費やプロテスト受験料を自分の力で貯めたい！</li>
+        </ul>
+        <div class="solution">
+          <p>
+            そんなプロツアーでの活躍を目指し、日々頑張っている選手のみなさまのため、プロトモゴルフがサービス開始いたします！！／
+          </p>
+        </div>
+      </section>
+      <section class="intro">
+        <div class="caption">
+          <p>「プロトモゴルフ」とは？</p>
+        </div>
+        <div class="answer-container">
+          <div class="answer">
+            <p>
+              プロトモゴルフは、女子プロ・研修生とアマチュアゴルファーのラウンドプレーをマッチングするプラットフォームです。
+            </p>
+            <p>
+              女子プロとアマチュアゴルファーをつなぐ<strong class="point"
+                >架け橋</strong
+              >になることを目指します。
+            </p>
+          </div>
+          <div class="answer-img">
+            <img
+              src="./imgs/back-view-friends-golf-course.png"
+              alt="back-view-friends-golf-course"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="caution-to-register">
+        <div class="captions">
+          <h2>ご登録にあたって</h2>
+          <h3>【ご登録前に必ずご確認ください】</h3>
+        </div>
+        <div class="contents">
+          <h4>◆就業形態</h4>
+          <p>
+            プロトモゴルフのお仕事は派遣やアルバイト契約とは異なり、プロトモゴルフとは雇用関係にない「個人事業主」として活動いただく形になります。
+          </p>
+          <p>※ご活動の上でお困りの際は、事務局へご相談いただけます。</p>
+          <h4>◆指名ラウンドの対象エリア（2024/09現在）</h4>
+          <p>【関東のみ】東京・神奈川・埼玉・千葉・群馬・栃木・茨城</p>
+          <p>
+            <small
+              >※今後、対象エリアを順次拡大していく予定です。乞うご期待！</small
+            >
+          </p>
+        </div>
+      </section>
+      <section class="flow">
+        <h2>全体の流れ</h2>
+        <div class="steps">
+          <ul>
+            <li class="step"><p>会員登録（プロフィール入力）</p></li>
+            <li class="step"><p>審査結果を待つ</p></li>
+            <li class="step">
+              <p>審査通過したら、プレー可能日（スケジュール）の登録を行う</p>
+            </li>
+            <li class="step"><p>指名リクエストを待つ</p></li>
+            <li class="step">
+              <p>指名リクエストの内容を確認し、承諾 or 辞退の返答を行う</p>
+            </li>
+            <li class="step">
+              <p>
+                承諾したら、指名者様にコースの予約をしていただくので、スタート情報の連絡を待つ
+              </p>
+            </li>
+            <li class="step"><p>スタート情報が共有される</p></li>
+            <li class="step"><p>当日のプレー♫</p></li>
+            <li class="step"><p>プレー終了後：指名者様の評価を行う</p></li>
+            <li class="step">
+              アカウントに<strong class="point">換金可能</strong
+              >なラウンド数が付与される!
+            </li>
+          </ul>
+        </div>
+      </section>
+      <hr />
+      <section class="registration">
+        <div class="container">
+          <div class="captions">
+            <p>💰報酬： <span class="point"> 26,400 </span>円／ラウンド💰</p>
+            <p>
+              登録料<span class="point">無料</span>+月額料金6ヶ月<span
+                class="point"
+                >無料</span
+              >キャンペーン中
+            </p>
+            <p><small>＼いつでも解約可能／</small></p>
+          </div>
+          <div class="fixed-area">
+            <a href="https://forms.gle/8WWWHekzL7E93mmx8" target="_blank">
+              <button class="registration-button">いますぐ新規登録</button>
+            </a>
+
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="container">
+          <ul>
+            <li>
+              <a
+                href="https://protomo-golf.com/terms-of-use-for-pro.pdf"
+                target="_blank"
+                >プロプレーヤー利用規約</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://protomo-golf.com/privacy-policy.pdf"
+                target="_blank"
+                >プライバシーポリシー</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://protomo-golf.com/specified-commercial-transaction-act.pdf"
+                target="_blank"
+                >特定商取引に基づく表記</a
+              >
+            </li>
+            <li>
+              <a href="https://forms.gle/4rxH1GaFeE1PuMJA7" target="_blank"
+                >お問い合わせ</a
+              >
+            </li>
+          </ul>
+          <p class="catch-text">
+            <span class="point">プロアマ</span>をもっと<span class="point"
+              >身近</span
+            >に。
+          </p>
+          <p class="copyright">&copy;&nbsp;プロトモゴルフ運営事務局</p>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
