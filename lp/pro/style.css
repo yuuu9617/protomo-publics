@@ -11,7 +11,7 @@
   box-sizing: border-box;
 }
 body {
-  background-image: url("../../imgs/protomo_logo.png");
+  background-image: url("./imgs/protomo_logo.png");
   background-color: rgba(255, 255, 255, 0.8);
   background-blend-mode: lighten;
 }
@@ -103,6 +103,7 @@ hr {
 }
 
 .appeal {
+  height: 232px;
   padding: 24px 18px;
 }
 .appeal .wants {
@@ -112,10 +113,13 @@ hr {
 }
 
 .appeal .wants li {
-  display: inline;
+  display: inline-block;
   margin-bottom: 8px;
   background: linear-gradient(transparent 60%, rgba(232, 193, 193, 0.5) 0%);
   padding: 0 1px 0;
+}
+.appeal .wants li:last-child {
+  display: inline;
 }
 
 .appeal .solution {
@@ -133,8 +137,11 @@ hr {
   align-items: center;
 }
 .intro .answer-container {
-  height: 700px;
-  position: relative;
+  height: 272px;
+  display: flex;
+}
+.intro .answer-container div {
+  width: 50%;
 }
 
 .intro .answer-container .answer {
@@ -142,35 +149,13 @@ hr {
   font-size: 15px;
 }
 
-.intro .answer-container .answer-imgs {
-  position: absolute;
-  /* z-index: -1; */
-  top: 184px;
-  left: -40px;
-}
-
-.intro .answer-container #golfer-man {
-  width: 270px;
-}
-
-.intro .answer-container #golfer-man svg {
-  fill: #e8c1c1;
-  opacity: 50%;
-}
-.intro .answer-container #golfer-woman {
-  width: 226px;
-  position: absolute;
-  top: 116px;
-  left: 134px;
-}
-
-.intro .answer-container #golfer-woman svg {
-  fill: #e8c1c1;
+.intro .answer-container .answer-img img {
   opacity: 60%;
 }
 
 .caution-to-register {
-  background-color: #fff;
+  height: 296px;
+  background-color: #f4ebeb;
   padding: 24px;
 }
 
@@ -280,6 +265,9 @@ hr {
 .flow .steps .step:nth-of-type(8) p::before {
   content: "8";
 }
+.flow .steps .step:nth-of-type(9) p::before {
+  content: "9";
+}
 
 .flow .steps .step:last-child {
   border-bottom: none;
@@ -287,237 +275,13 @@ hr {
   font-weight: bold;
   border-radius: 0 0 7px 7px;
   font-size: 1.2em;
-  background: #fae9e3 url("../../imgs/step-bg_sp.png") no-repeat center bottom;
+  background: #fae9e3 url("./imgs/step-bg_sp.png") no-repeat center bottom;
   background-size: 278px 70px;
   padding-bottom: 2em;
 }
 .flow .steps .step:last-child::after,
 .flow .steps .step:last-child::before {
   display: none;
-}
-
-.price {
-  background-color: #f4ebeb;
-  padding: 24px;
-}
-
-.price h2 {
-  font-size: 24px;
-  text-align: center;
-}
-
-.price .plans {
-  margin: 12px 0;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.price .plans .enjoy-plan,
-.price .plans .free-plan {
-  padding: 24px 12px;
-  font-weight: bold;
-  background-color: #fff;
-  border-radius: 20px;
-}
-
-.price .plans .enjoy-plan .heading-title,
-.price .plans .free-plan .heading-title {
-  color: #d40000;
-  font-size: 18px;
-}
-
-.price .plans .enjoy-plan .main-title,
-.price .plans .free-plan .main-title {
-  font-size: 24px;
-}
-
-.price .plans .enjoy-plan .description,
-.price .plans .free-plan .description {
-  font-size: 14px;
-}
-
-
-
-.price .plans .enjoy-plan .price-value,
-.price .plans .free-plan .price-value {
-  margin-top: 24px;
-  margin-bottom: 24px;
-  position: relative;
-}
-
-.price .plans .enjoy-plan .price-value .currency-symbol,
-.price .plans .free-plan .price-value .currency-symbol {
-  font-size: 36px;
-}
-
-.price .plans .enjoy-plan .price-value .value,
-.price .plans .free-plan .price-value .value {
-  font-size: 36px;
-}
-
-.price .plans .enjoy-plan .price-value .unit,
-.price .plans .free-plan .price-value .unit {
-  font-size: 16px;
-}
-
-.price .plans .enjoy-plan .campaign {
-  width: 152px;
-  position: absolute;
-  top: -14px;
-  left: 138px;
-  transform: rotate(16deg);
-}
-
-.price .plans .free-plan .price-value .annotation {
-  font-size: 14px;
-  opacity: 50%;
-}
-
-.price .plans .enjoy-plan .request-fee .content,
-.price .plans .free-plan .request-fee .content {
-  display: flex;
-  justify-content: flex-start;
-  gap: 24px;
-  align-items: center;
-}
-
-.price .plans .enjoy-plan .request-fee .content .item,
-.price .plans .free-plan .request-fee .content .item {
-  font-size: 20px;
-}
-.price .plans .enjoy-plan .request-fee .content .item img,
-.price .plans .free-plan .request-fee .content .item img {
-  display: inline;
-  width: 54px;
-  vertical-align: bottom;
-}
-.price .plans .enjoy-plan .request-fee .content .value,
-.price .plans .free-plan .request-fee .content .value {
-  display: flex;
-  gap: 4px;
-  align-items: baseline;
-}
-.price .plans .enjoy-plan .request-fee .times,
-.price .plans .free-plan .request-fee .times {
-  font-size: 24px;
-}
-
-.price .plans .enjoy-plan .request-fee .unit,
-.price .plans .free-plan .request-fee .unit {
-  font-size: 14px;
-}
-
-.price .yusho-flag-price {
-  margin: 24px 0;
-}
-
-.price .yusho-flag-price h3 {
-  font-size: 20px;
-  text-align: center;
-  margin-bottom: 8px;
-}
-.price .yusho-flag-price .prices {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.price .yusho-flag-price .prices > div {
-  background-color: #fff;
-  border-radius: 20px;
-}
-.price .yusho-flag-price > div > div {
-  display: flex;
-  align-items: center;
-  padding: 8px;
-  font-weight: bold;
-}
-.price .yusho-flag-price .item-img {
-  width:88px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.price .yusho-flag-price .single .item-img img {
-  width: 54px;
-  height: 54px;
-}
-.price .yusho-flag-price .item-name {
-  font-size: 20px;
-}
-.price .yusho-flag-price .item-name span{
-font-size: 14px;
-}
-.price .memo p {
-  font-size: 12px;
-  font-weight: bold;
-
-}
-.registered-pro {
-  padding: 24px 12px;
-}
-
-.registered-pro h2 {
-  text-align: center;
-}
-.registered-pro .annotations {
-text-align: end;
-margin-bottom: 24px;
-}
-.registered-pro .catch-pro .profile-img {
-  width: 118px;
-  height: 166px;
-  margin-bottom: 4px;
-}
-
-.registered-pro .catch-pro img {
-object-fit: cover;
-object-position: left;
-height: 100%;
-
-}
-
-.registered-pro .catch-pro {
-  position: relative;
-
-}
-
-.registered-pro .catch-pro .profile-details .name,
-.registered-pro .catch-pro .profile-details .title {
-  font-size: 14px;
-}
-.registered-pro .catch-pro .profile-details img {
-  width: 24px;
-  display: inline;
-  vertical-align: bottom;
-}
-
-.registered-pro .catch-pro .comment {
-  background-color: #d9d9d9;
-  width: 244px;
-  font-size: 14px;
-  padding: 8px;
-  border-radius: 10px;
-  position: absolute;
-  top: -26px;
-  left: 106px;
-}
-
-.registered-pro .catch-pro .future-registers .images {
-  display: flex;
-  position: absolute;
-  bottom: 18px;
-  right: 0;
-}
-
-.registered-pro .catch-pro .future-registers .images img {
-  width: 88px;
-}
-
-.registered-pro .catch-pro .future-registers p {
-  font-size: 14px;
-  text-align: right;
 }
 
 footer {
