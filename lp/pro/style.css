@@ -11,7 +11,7 @@
   box-sizing: border-box;
 }
 body {
-  background-image: url("./imgs/protomo_logo.png");
+  background-image: url("../../imgs/protomo_logo.png");
   background-color: rgba(255, 255, 255, 0.8);
   background-blend-mode: lighten;
 }
@@ -137,11 +137,8 @@ hr {
   align-items: center;
 }
 .intro .answer-container {
-  height: 272px;
-  display: flex;
-}
-.intro .answer-container div {
-  width: 50%;
+  height: 700px;
+  position: relative;
 }
 
 .intro .answer-container .answer {
@@ -149,7 +146,30 @@ hr {
   font-size: 15px;
 }
 
-.intro .answer-container .answer-img img {
+.intro .answer-container .answer-imgs {
+  position: absolute;
+  /* z-index: -1; */
+  top: 184px;
+  left: -40px;
+}
+
+.intro .answer-container #golfer-man {
+  width: 270px;
+}
+
+.intro .answer-container #golfer-man svg {
+  fill: #e8c1c1;
+  opacity: 50%;
+}
+.intro .answer-container #golfer-woman {
+  width: 226px;
+  position: absolute;
+  top: 116px;
+  left: 134px;
+}
+
+.intro .answer-container #golfer-woman svg {
+  fill: #e8c1c1;
   opacity: 60%;
 }
 
@@ -275,7 +295,7 @@ hr {
   font-weight: bold;
   border-radius: 0 0 7px 7px;
   font-size: 1.2em;
-  background: #fae9e3 url("./imgs/step-bg_sp.png") no-repeat center bottom;
+  background: #fae9e3 url("../../imgs/step-bg_sp.png") no-repeat center bottom;
   background-size: 278px 70px;
   padding-bottom: 2em;
 }
